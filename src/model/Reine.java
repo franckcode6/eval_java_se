@@ -12,7 +12,7 @@ public class Reine extends Piece {
 	public Reine(int x, int y, Couleur c) {
 		super(x, y, c);
 	}
-	
+
 	public Reine(int x, int y, Couleur c, boolean b) {
 		super(x, y, c, b);
 	}
@@ -31,9 +31,7 @@ public class Reine extends Piece {
 				mouvementPossible.add(temp.clone());
 				if (this.bloqueEnnemi(temp))
 					break;
-			} else
-				break;
-
+			}
 		}
 		for (int c = 1; c < 8; c++) {
 			temp.setX(x - c);
@@ -42,8 +40,7 @@ public class Reine extends Piece {
 				mouvementPossible.add(temp.clone());
 				if (this.bloqueEnnemi(temp))
 					break;
-			} else
-				break;
+			}
 		}
 		for (int c = 1; c < 8; c++) {
 			temp.setX(x - c);
@@ -52,8 +49,7 @@ public class Reine extends Piece {
 				mouvementPossible.add(temp.clone());
 				if (this.bloqueEnnemi(temp))
 					break;
-			} else
-				break;
+			}
 		}
 		for (int c = 1; c < 8; c++) {
 			temp.setX(x + c);
@@ -62,8 +58,7 @@ public class Reine extends Piece {
 				mouvementPossible.add(temp.clone());
 				if (this.bloqueEnnemi(temp))
 					break;
-			} else
-				break;
+			}
 		}
 		for (int c = 1; c < 8; c++) {
 			temp.setX(x + c);
@@ -72,8 +67,7 @@ public class Reine extends Piece {
 				mouvementPossible.add(temp.clone());
 				if (this.bloqueEnnemi(temp))
 					break;
-			} else
-				break;
+			}
 		}
 		for (int c = 1; c < 8; c++) {
 			temp.setX(x - c);
@@ -82,8 +76,7 @@ public class Reine extends Piece {
 				mouvementPossible.add(temp.clone());
 				if (this.bloqueEnnemi(temp))
 					break;
-			} else
-				break;
+			}
 		}
 		for (int c = 1; c < 8; c++) {
 			temp.setX(x);
@@ -92,8 +85,7 @@ public class Reine extends Piece {
 				mouvementPossible.add(temp.clone());
 				if (this.bloqueEnnemi(temp))
 					break;
-			} else
-				break;
+			}
 		}
 		for (int c = 1; c < 8; c++) {
 			temp.setX(x);
@@ -102,12 +94,11 @@ public class Reine extends Piece {
 				mouvementPossible.add(temp.clone());
 				if (this.bloqueEnnemi(temp))
 					break;
-			} else
-				break;
+			}
 		}
 		return mouvementPossible;
 	}
-	
+
 	@Override
 	public String toString() {
 

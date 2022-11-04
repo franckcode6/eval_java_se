@@ -59,7 +59,6 @@ public class Roi extends Piece {
 			for (Position pos2 : posPrises) {
 				if (pos.equals(pos2)) {
 					posEnlevees.add(pos);
-					break;
 				}
 
 			}

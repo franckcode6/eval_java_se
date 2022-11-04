@@ -36,8 +36,7 @@ public class Tour extends Piece {
 				mouvementPossible.add(temp.clone());
 				if (this.bloqueEnnemi(temp))
 					break;
-			} else
-				break;
+			}
 		}
 		for (int c = 1; c < 8; c++) {
 			temp.setX(x - c);
@@ -46,8 +45,7 @@ public class Tour extends Piece {
 				mouvementPossible.add(temp.clone());
 				if (this.bloqueEnnemi(temp))
 					break;
-			} else
-				break;
+			}
 		}
 		for (int c = 1; c < 8; c++) {
 			temp.setX(x);
@@ -56,8 +54,7 @@ public class Tour extends Piece {
 				mouvementPossible.add(temp.clone());
 				if (this.bloqueEnnemi(temp))
 					break;
-			} else
-				break;
+			}
 		}
 		for (int c = 1; c < 8; c++) {
 			temp.setX(x);
@@ -66,8 +63,7 @@ public class Tour extends Piece {
 				mouvementPossible.add(temp.clone());
 				if (this.bloqueEnnemi(temp))
 					break;
-			} else
-				break;
+			}
 		}
 
 		return mouvementPossible;
