@@ -43,4 +43,4 @@ Dans la classe Joueur, une petite inversion dans les couleurs affectait l'affich
 
 Au niveau des pièces, chaque classe fille de Piece implémente l'interface Mouvement, il n'y a pas besoin de celà. Piece étant la classe mère, on a juste à implémenter celle ci et les classes filles qui lui sont rattachées seront elles memes reliées à cette interface.
 
-Pour la classe Reine, il manquait tout le contenu de la classe, son constructeur, sa méthode de mouvement qui était en gros un mélange entre celle du Fou et de la Tour, ainsi que sa méthode toString() pour l'affichage de ses coordonnées en console.
+Pour la classe Reine, il manquait tout le contenu de la classe, le extend vers sa classe mère Pièce, son constructeur, sa méthode de mouvement qui était en gros un mélange entre celle du Fou et de la Tour, ainsi que sa méthode toString() pour l'affichage de ses coordonnées en console.

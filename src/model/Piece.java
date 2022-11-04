@@ -101,6 +101,7 @@ public class Piece implements Mouvement {
 
 	public static void updateAll() {
 		for (Piece count : tabPiece) {
+
 			count.mouvementExecutable = count.getMouvementPossible();
 			if (count.couleur.equals(Couleur.WHITE))
 				posPrisesBlanc.addAll(count.mouvementExecutable);
